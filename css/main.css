@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  background: linear-gradient(78.76deg, rgb(254, 175, 0) 19.353%,rgb(248, 212, 66) 90.115%);
+  font-family: "Montserrat", sans-serif;
+}
+.form{
+  box-shadow: 2px 5px 10px 0px rgba(0, 0, 0, 0.377);
+}
+.form-wrap span{
+  border: 3px solid rgb(248, 212, 66);
+  display: inline-block;
+}
+.form-input{
+  outline: none;
+}
+button{
+  transition: all 0.3s ease;
+}
+button:hover{
+  opacity: 0.7;
+}
