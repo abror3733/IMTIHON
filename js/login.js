@@ -62,11 +62,8 @@ elAddBtn.addEventListener("click",function(){
             </label>
           </div>
         </div>
-        <div class="mt-[20px] flex items-end justify-between mb-[30px]">
-          <label class="flex flex-col gap-[2px]">
-            <span class="text-[15px] font-semibold">Enter  date</span>
-            <input class="py-[8px] pl-[15px] pr-[5px] rounded-[4px] outline-none" type="date"/> 
-          </label>
+        <div class="mt-[40px] flex  justify-center mb-[30px]">
+
           <button class="w-[45%] h-[50px] py-[8px] pl-[15px] bg-orange-800 hover:opacity-70 ease-out duration-300 text-white text-[20px] rounded-[4px] ">Add+</button>
         </div>
       </div>
@@ -261,6 +258,7 @@ data.map(item=>{
   elListItem.addEventListener("click",function(evt){
     let clickedId = evt.target.dataset.id
     let dataClick = datas.find(item=>item.id == clickedId)
+ 
     elSearchInput.value=`${dataClick.name}`
 
     let searchFilter = datas.filter(item=>item.id == clickedId)
